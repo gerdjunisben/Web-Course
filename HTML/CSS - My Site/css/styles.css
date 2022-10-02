@@ -1,0 +1,90 @@
+body{
+    margin:0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+hr {
+    border-style: none;
+    height: 0px;
+    width: 20%;
+    border-style:dotted none none;
+    border-width:10px;
+    border-color:#87A2FB;
+}
+h1{
+    font-size: 250%;
+    width: 10%;
+    margin:0 auto;
+}
+h2{
+    font-size: 200%;
+}
+h3{
+    font-size: 100%;
+}
+.top-con
+{
+    background-color: #FFF5E4;
+    position: relative;
+    padding-top:100px;
+    
+}
+.mid-con
+{
+    margin: 5%;
+}
+
+.bot-con
+{
+    border: 20px;
+    background-color: #ADDDD0;
+}
+
+#pro
+{
+    text-decoration:underline ;
+}
+
+.bot-cloud
+{
+    position: absolute;
+    left:300px;
+    bottom:300px;
+}
+
+.top-cloud
+{
+    position:absolute;
+   right:  300px;
+    top: 50px;
+}
+
+#copywrite
+{
+    color : white;
+}
+
+.skill-image-1
+{
+    width: 15%;
+    float: left;
+    margin-right:30px;
+    margin-bottom:70px;
+}
+
+.skills
+{
+    width: 50%;
+    margin:50px auto 50px;
+    text-align: left;
+    
+}
+
+.education
+{
+    width:50%;
+    margin:50px auto 50px;
+    
+    text-align: left;
+}
