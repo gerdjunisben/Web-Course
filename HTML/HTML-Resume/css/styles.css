@@ -1,0 +1,36 @@
+body {
+    background-color: #EEF1FF;
+}
+
+hr {
+    border-style: none;
+    height: 0px;
+    width: 30%;
+    border-style:dotted none none;
+    border-width:10px;
+    border-color:#D2DAFF;
+}
+
+h1
+{  
+    color: #B1B2FF;
+}
+
+h2
+{  
+    color: #AAC4FF;
+}
+
+/* You can select classes like so*/
+.git
+{
+    color: #B1B2FF;
+}
+/* You can select an id like so
+#heading
+{
+
+}
+The difference between id and class is that there can be only one id while you can have any amount of a class
+one thing may have multiple classes and one id
+*/
