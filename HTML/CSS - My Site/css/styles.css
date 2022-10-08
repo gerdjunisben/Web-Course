@@ -4,6 +4,7 @@ body{
     font-family: Arial, sans-serif;
     font-weight: normal;
 }
+
 hr {
     border-style: none;
     height: 0px;
@@ -12,10 +13,11 @@ hr {
     border-width:10px;
     border-color:#87A2FB;
 }
+
 h1{
     font-size: 250%;
     width: 50%;
-    margin:0 auto;
+    text-align: center;
 }
 h2{
     font-size: 200%;
@@ -23,16 +25,23 @@ h2{
 h3{
     font-size: 100%;
 }
-.top-con
+
+.about-me
 {
-    background-color: #FFF5E4;
-    position: relative;
-    padding-top:100px;
-    
+    text-align: center;
 }
+
+.profile
+{
+    width: 60%;
+    border-radius: 100%;
+    padding: 7%;
+}
+
 .mid-con
 {
     margin: 5%;
+    text-align: center;
 }
 
 .bot-con
@@ -41,24 +50,6 @@ h3{
     background-color: #ADDDD0;
 }
 
-#pro
-{
-    text-decoration:underline ;
-}
-
-.bot-cloud
-{
-    position: absolute;
-    left:300px;
-    bottom:300px;
-}
-
-.top-cloud
-{
-    position:absolute;
-   right:  300px;
-    top: 50px;
-}
 
 #copywrite
 {
@@ -67,24 +58,19 @@ h3{
 
 .skill-image-1
 {
-    width: 15%;
-    float: left;
-    margin-right:30px;
-    margin-bottom:70px;
+    width: 50%;
 }
 
 .skills
 {
-    width: 50%;
-    margin:50px auto 50px;
-    text-align: left;
+    width: 70%;
+    margin:7% 15%;
     
 }
 
 .education
 {
-    width:50%;
-    margin:50px auto 50px;
+    width:70%;
+    margin:7% 15%;
     
-    text-align: left;
 }
