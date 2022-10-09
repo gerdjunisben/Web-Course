@@ -6,14 +6,7 @@ body{
     padding:0;
 }
 
-hr {
-    border-style: none;
-    height: 0px;
-    width: 20%;
-    border-style:dotted none none;
-    border-width:10px;
-    border-color:#B1B2FF;
-}
+
 
 h1{
     font-size: 250%;
@@ -28,6 +21,7 @@ h3{
 
 .about-me
 {
+    width:100%;
     text-align: center;
     background-color: #D2DAFF;
 }
@@ -46,14 +40,17 @@ h3{
 
 .bot-con
 {
-    border: 20px;
-    background-color: #D2DAFF;
+    width:100%;
+    background-color:#EEF1FF ;
+    border: 7% 15%;
+    text-align: center;
 }
 
 
 #copywrite
 {
     color : #EEF1FF;
+    
 }
 
 .skills
@@ -65,12 +62,14 @@ h3{
 
 .objective
 {
+    width:100%;
     background-color:#EEF1FF ;
     border: 7% 15%;
 }
 
 .courses
 {
+    width:100%;
     background-color:#EEF1FF ;
     border: 7% 15%;
 }
@@ -92,7 +91,9 @@ h3{
 
 .contacts
 {
+    width:100%;
     text-align: center;
+    border: 7% 15%;
     background-color: #D2DAFF;
 }
 
