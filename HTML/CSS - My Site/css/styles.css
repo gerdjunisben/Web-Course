@@ -1,8 +1,9 @@
 body{
-    margin:0;
-    text-align: center;
+    text-align: left;
     font-family: Arial, sans-serif;
     font-weight: normal;
+    margin:0;
+    padding:0;
 }
 
 hr {
@@ -11,66 +12,105 @@ hr {
     width: 20%;
     border-style:dotted none none;
     border-width:10px;
-    border-color:#87A2FB;
+    border-color:#B1B2FF;
 }
 
 h1{
     font-size: 250%;
     width: 50%;
-    text-align: center;
 }
 h2{
     font-size: 200%;
 }
 h3{
-    font-size: 100%;
+    font-size: 150%;
 }
 
 .about-me
 {
     text-align: center;
+    background-color: #D2DAFF;
 }
+
+
+
 
 .profile
 {
     width: 60%;
     border-radius: 100%;
-    padding: 7%;
+    padding: 1%;
+
 }
 
-.mid-con
-{
-    margin: 5%;
-    text-align: center;
-}
 
 .bot-con
 {
     border: 20px;
-    background-color: #ADDDD0;
+    background-color: #D2DAFF;
 }
 
 
 #copywrite
 {
-    color : white;
-}
-
-.skill-image-1
-{
-    width: 50%;
+    color : #EEF1FF;
 }
 
 .skills
 {
-    width: 70%;
-    margin:7% 15%;
-    
+    width:100%;
+    border:7% 15%;
+    background-color: #D2DAFF;
+}
+
+.objective
+{
+    background-color:#EEF1FF ;
+    border: 7% 15%;
+}
+
+.courses
+{
+    background-color:#EEF1FF ;
+    border: 7% 15%;
 }
 
 .education
 {
-    width:70%;
-    margin:7% 15%;
+    width:100%;
+    border:7% 15%;
+    background-color: #D2DAFF;
     
 }
+
+.projects
+{
+    width:100%;
+    border:7% 15%;
+    background-color:#EEF1FF ;
+}
+
+.contacts
+{
+    text-align: center;
+    background-color: #D2DAFF;
+}
+
+#carouselExampleControls
+{
+    text-align: center;
+}
+
+.carousel-images
+{
+    width: 50%;
+}
+
+@media (max-width: 1028px) {
+
+  
+  
+    .carousel-image {
+      width:40%;
+    }
+  }
