@@ -21,7 +21,6 @@ h3{
 
 .about-me
 {
-    width:100%;
     text-align: center;
     background-color: #D2DAFF;
 }
@@ -40,7 +39,6 @@ h3{
 
 .bot-con
 {
-    width:100%;
     background-color:#EEF1FF ;
     border: 7% 15%;
     text-align: center;
@@ -62,14 +60,12 @@ h3{
 
 .objective
 {
-    width:100%;
     background-color:#EEF1FF ;
     border: 7% 15%;
 }
 
 .courses
 {
-    width:100%;
     background-color:#EEF1FF ;
     border: 7% 15%;
 }
@@ -91,13 +87,12 @@ h3{
 
 .contacts
 {
-    width:100%;
     text-align: center;
     border: 7% 15%;
     background-color: #D2DAFF;
 }
 
-#carouselExampleControls
+#projectsControls
 {
     text-align: center;
 }
@@ -106,6 +101,7 @@ h3{
 {
     width: 50%;
 }
+
 
 @media (max-width: 1028px) {
 
