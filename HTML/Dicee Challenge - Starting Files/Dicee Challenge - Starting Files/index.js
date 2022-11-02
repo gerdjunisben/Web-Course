@@ -6,7 +6,7 @@ var player2=0;
 var die = document.querySelectorAll("img");
 for(var i=0;i<die.length;i++)
 {
-    if(i<3)
+    if(i<die.length/2)
     {
         getDice(die[i],1);
     }
@@ -32,8 +32,8 @@ else
 function getDice(image,player)
 {
     var randomNumber = Math.floor(Math.random()*6)+1;
-    var diceImage = "images/dice" + randomNumber +".png";
-    image.setAttribute("src", diceImage);
+    var diceImage = "images/dice" + randomNumber + ".png";
+    image.setAttribute("src",diceImage);
     if(player===1)  
     {
         player1+=randomNumber;

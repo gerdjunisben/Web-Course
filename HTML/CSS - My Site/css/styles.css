@@ -102,6 +102,10 @@ h3{
     width: 50%;
 }
 
+.fadein{
+    opacity: 0;
+}
+
 
 @media (max-width: 1028px) {
 
@@ -111,3 +115,5 @@ h3{
       width:40%;
     }
   }
+
+
