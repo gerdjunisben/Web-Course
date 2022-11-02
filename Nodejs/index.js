@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hi there ~Overwatch Winston')
 })
 
+app.get('/where', (req, res) => {
+    res.send('here')
+  })
+
 app.listen(port, () => {
   console.log(`heard`)
 })
