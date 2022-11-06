@@ -9,11 +9,40 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname +"/calculator.html")
 });
 
+function getInt(a)
+{
+  var b = Number.parseInt(a);
+  if(Number.isInteger(b))
+    return b;
+  else
+    return 0;
+}
+
 app.post('/', (req, res) => {
-    var a = Number.parseInt(req.body.num1);
-    var b = Number.parseInt(req.body.num2);
+    var s1 = getInt(req.body.s1);   
+    var s2 = getInt(req.body.s2);
+    var h = getInt(req.body.h);
+
     
-    res.send("" + (a+b));
+    
+
+    if(s1==0 && s2==0 || s2==0 && h==0 || h==0 && s1==0)
+    {
+      res.send("You are very small");
+    }
+    else if(h==0)
+    {
+      res.send("Hypotenuse is " + (Math.sqrt(Math.pow(s1,2)+Math.pow(s2,2))));
+    }
+    else if(s1==0)
+    {
+      res.send("Side 1 is " + (Math.sqrt(Math.pow(h,2)-Math.pow(s2,2))));
+    }
+    else{
+      res.send("Side 2 is " + (Math.sqrt(Math.pow(h,2)-Math.pow(s1,2))));
+    }
+    
+    
 });
 
 app.listen(port, () => {
