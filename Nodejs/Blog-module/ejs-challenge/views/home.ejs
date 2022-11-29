@@ -2,6 +2,7 @@
 <h1>Home</h1>
 <% posts.forEach((p)=> {%>
     <h2> <%=p.title%></h2>
-   <p><%=p.body%></p>
+   <p><%=p.body.substring(0,100) + "..."%></p>
+   <a href="/posts/<%=p.title%>">more</a>
 <%}) %> 
 <%- include('partials/footer') %> 

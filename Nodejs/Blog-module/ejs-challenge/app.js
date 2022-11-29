@@ -3,6 +3,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const _ = require("lodash");
+const e = require("express");
 
 var posts = [];
 
@@ -49,6 +51,19 @@ app.post("/compose",(req,res)=>{
 
   res.redirect("/");
 
+})
+
+app.get("/posts/:postName",(req,res)=>{
+  let title = req.params.postName;
+  posts.forEach((p)=>{
+    if(_.lowerCase(p.title) === _.lowerCase(title))
+    {
+      res.render("post",{
+        title:p.title,
+        body:p.body
+      });
+    }
+  });
 })
 
 
