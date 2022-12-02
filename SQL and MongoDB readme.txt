@@ -1,2 +1,0 @@
-The SQL is all browser stuff so I'm just gonna point you towards my final project to see use of it.
-I couldn't get her MongoDB module to work the way she wanted it, I had to use Mongosh which makes me think the lesson is outdate.
