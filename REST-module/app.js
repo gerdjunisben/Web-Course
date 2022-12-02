@@ -72,6 +72,7 @@ app.route("/articles")
 /////////////////////////Individual Articles///////////////////////////////////
 
 app.route("/articles/:articleTitle")
+//returns from mongodb database ~Ben
 
 .get(function(req, res){
   const articleTitle = req.params.articleTitle;
@@ -84,6 +85,8 @@ app.route("/articles/:articleTitle")
     }
   });
 })
+
+//patch is like put but it only does certain perams instead of the whole thing ~Ben
 
 .patch(function(req, res){
   const articleTitle = req.params.articleTitle;
@@ -98,6 +101,8 @@ app.route("/articles/:articleTitle")
       }
     });
 })
+
+//replaces the whole thing ~Ben
 
 .put(function(req, res){
 
@@ -116,7 +121,7 @@ app.route("/articles/:articleTitle")
     });
 })
 
-
+//I think you can guess based on name ~Ben
 .delete(function(req, res){
   const articleTitle = req.params.articleTitle;
   LostPet.findOneAndDelete({title: articleTitle}, function(err){
