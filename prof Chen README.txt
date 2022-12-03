@@ -5,7 +5,8 @@ which makes me think the lesson is outdated.
 UPDATE: It is all depricated (the mongodb), her tutorial was last updated in 2018.
 I will make an attempt to do the blog website challenge next week but it is not my priority since it isn't really my fault that this 
 tutorial is depricated. 
-If I have time I will also update her restfull api module which I placed in here. 
+If I have time (I probably will) I will also update her restfull api module as well as the authentication module which are placed 
+in this repo with some comments. 
 Anyways I'm gonna watch the rest and authentication modules anyways because they still have good concepts which will help me make one 
 that actually works when I update her code. 
 Your regularlly scheduled web course will continue with reactjs.
