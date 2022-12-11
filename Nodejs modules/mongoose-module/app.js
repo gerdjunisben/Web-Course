@@ -1,30 +1,36 @@
 const mongoose = require('mongoose');
+const Fruit = require("../mongoose-module/Fruit")
 
-main().catch(err=>console.log(err));
+process.setMaxListeners(1);
+mongoose.connect("mongodb://0.0.0.0:27017/fruitsDB").then(()=>console.log("connected")).catch(e=>{console.log(e)});
 
-async function main()
+
+run();
+
+async function run()
 {
-    mongoose.connect("mongodb://localhost:27017/fruitsDB");
+    Fruit.createCollection();
+
+    const apple = new Fruit({
+        name:'apple',
+        rating:1,
+        review:'terrible fruit'
+    });
+
+   apple.save().then(()=>console.log("connected")).catch(e=>{console.log(e)});;
+    console.log(apple);
+    
+    
+    
 }
 
-const fruitSchema = new mongoose.Schema({
-    name:{type:String,
-        require:true},
-
-    rating:{type:Number,
-            min:1,
-            max:10},
-    review:String
-});
-
-const Fruit = new mongoose.model("Fruit",fruitSchema);
 
 
-const apple = new Fruit({
-    name:'apple',
-    rating:1,
-    review:'terrible fruit'
-});
+    
+
+
+/*
+
 
 apple.save();
 
@@ -45,8 +51,9 @@ Fruit.find((err,fruits)=>{
             console.log(f.name);
         })
 })
+
+Fruit.updateOne({_id:},{field:},(err)=>callback)
 */
-//Fruit.updateOne({_id:},{field:},(err)=>callback)
 
 
 

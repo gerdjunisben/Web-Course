@@ -27,7 +27,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
+mongoose.connect("mongodb://0.0.0.0:27017/userDB", {useNewUrlParser: true});
 mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema ({
@@ -69,12 +69,13 @@ passport.use(new GoogleStrategy({
   }
 ));
 
+
 app.get("/", function(req, res){
   res.render("home");
 });
 
-app.get("/auth/google",
-  passport.authenticate('google', { scope: ["profile"] })
+app.get("/auth/google",(req,res)=>{
+  passport.authenticate('google', { scope: ["profile"] })}
 );
 
 app.get("/auth/google/secrets",

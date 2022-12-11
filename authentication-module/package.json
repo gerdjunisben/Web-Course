@@ -1,7 +1,7 @@
 {
-  "name": "Secrets",
+  "name": "secrets",
   "version": "1.0.0",
-  "description": "",
+  "description": "To inspect the code for the module, you can clone this repository and use git checkout to see the completed code for each lesson. If you don't remember how to do this, be sure to revisit the Git and GitHub module in the course.",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -16,9 +16,8 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm app.js"
   },
   "keywords": [],
   "author": "",
