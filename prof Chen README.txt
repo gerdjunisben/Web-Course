@@ -3,11 +3,9 @@ I couldn't get her MongoDB module to work the way she wanted it, I had to use Mo
 which makes me think the lesson is outdated.
 
 UPDATE: It is all depricated (the mongodb), her tutorial was last updated in 2018.
-I will make an attempt to do the blog website challenge next week but it is not my priority since it isn't really my fault that this 
+I will make an attempt to do fix them but it is not my priority since it isn't really my fault that this 
 tutorial is depricated. 
-If I have time (I probably will) I will also update her restfull api module as well as the authentication module which are placed 
-in this repo with some comments. 
 Anyways I'm gonna watch the rest and authentication modules anyways because they still have good concepts which will help me make one 
 that actually works when I update her code. 
-Your regularlly scheduled web course will continue with reactjs.
-Also you might want to get a new tutorial for the mongodb stuff for next semester, if I find anything I'll keep you posted.
+Your regularly scheduled web course will continue with reactjs.
+Also you might want to get a new tutorial for the mongodb stuff for next semester, if I find anything I'll add it here.
